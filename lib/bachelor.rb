@@ -41,5 +41,11 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  age_all = 0
+  divider = 0
+  data[season].each do |hsh|
+    age_all += (hsh["age"]).to_f
+    diveder += 1
+  end
+  (age_all / divider.to_f).round(0)
 end
