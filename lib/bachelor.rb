@@ -2,7 +2,7 @@ require "pry"
 
 def get_first_name_of_season_winner(data, season)
   data[season].each do |hsh|
-    if hsh["status"] == "winner"
+    if hsh["status"].downcase == "winner"
       return hsh["name"].split(" ").first
     end
   end
