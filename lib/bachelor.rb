@@ -12,6 +12,8 @@ def get_contestant_name(data, occupation)
   data[season].each do |hsh|
     if hsh["occupation"].downcase == occupation
       return hsh["name"]
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
