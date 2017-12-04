@@ -45,7 +45,7 @@ def get_average_age_for_season(data, season)
   divider = 0
   data[season].each do |hsh|
     age_all += (hsh["age"]).to_f
-    diveder += 1
+    divider += 1
   end
   (age_all / divider.to_f).round(0)
 end
