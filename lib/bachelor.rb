@@ -30,8 +30,6 @@ def count_contestants_by_hometown(data, hometown)
   counter
 end
 
-
-
 def get_occupation(data, hometown)
   data.each do |season, contestants|
     contestants.each do |hsh|
