@@ -11,7 +11,7 @@ end
 def get_contestant_name(data, occupation)
   data.each do |season, contestans|
   contestants.each do |hsh|
-    if hsh["occupation"].downcase == occupation
+    if hsh["occupation"] == occupation
       return hsh["name"]
     end
   end
