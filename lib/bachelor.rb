@@ -9,7 +9,8 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data[season].each do |hsh|
+  data.each do |season, contestans|
+  contestants.each do |hsh|
     if hsh["occupation"].downcase == occupation
       return hsh["name"]
     end
