@@ -10,12 +10,12 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, contestans|
-  contestants.each do |hsh|
-    if hsh["occupation"] == occupation
-      return hsh["name"]
+    contestants.each do |hsh|
+      if hsh["occupation"] == occupation
+        return hsh["name"]
+      end
     end
   end
-end
 end
 
 def count_contestants_by_hometown(data, hometown)
